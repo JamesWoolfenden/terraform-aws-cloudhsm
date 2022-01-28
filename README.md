@@ -36,9 +36,9 @@ No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -46,36 +46,37 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_appsync_datasource.user](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_datasource) | resource |
-| [aws_appsync_graphql_api.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_graphql_api) | resource |
-| [aws_appsync_resolver.user](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_resolver) | resource |
-| [aws_iam_role.appsync](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| Name                                                                                                                                            | Type     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [aws_appsync_datasource.user](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_datasource)                   | resource |
+| [aws_appsync_graphql_api.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_graphql_api)                 | resource |
+| [aws_appsync_resolver.user](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appsync_resolver)                       | resource |
+| [aws_iam_role.appsync](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role)                                    | resource |
 | [aws_iam_role_policy_attachment.attach](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_api_name"></a> [api\_name](#input\_api\_name) | n/a | `string` | `"hitme"` | no |
-| <a name="input_appsync_rolename"></a> [appsync\_rolename](#input\_appsync\_rolename) | The name of the role to attach to appsync | `string` | `"Appsync"` | no |
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is a map type for applying tags on resources | `map(any)` | n/a | yes |
-| <a name="input_datasource_user_name"></a> [datasource\_user\_name](#input\_datasource\_user\_name) | n/a | `string` | `"hitme_user"` | no |
-| <a name="input_lambda_resolver_arn"></a> [lambda\_resolver\_arn](#input\_lambda\_resolver\_arn) | n/a | `string` | n/a | yes |
-| <a name="input_request_template"></a> [request\_template](#input\_request\_template) | n/a | `string` | n/a | yes |
-| <a name="input_resolver_field"></a> [resolver\_field](#input\_resolver\_field) | (optional) describe your variable | `string` | n/a | yes |
-| <a name="input_resolver_type"></a> [resolver\_type](#input\_resolver\_type) | (optional) describe your variable | `string` | n/a | yes |
-| <a name="input_response_template"></a> [response\_template](#input\_response\_template) | n/a | `string` | n/a | yes |
-| <a name="input_schema"></a> [schema](#input\_schema) | n/a | `string` | n/a | yes |
+| Name                                                                                          | Description                                       | Type       | Default        | Required |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------- | -------------- | :------: |
+| <a name="input_api_name"></a> [api_name](#input_api_name)                                     | n/a                                               | `string`   | `"hitme"`      |    no    |
+| <a name="input_appsync_rolename"></a> [appsync_rolename](#input_appsync_rolename)             | The name of the role to attach to appsync         | `string`   | `"Appsync"`    |    no    |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                            | This is a map type for applying tags on resources | `map(any)` | n/a            |   yes    |
+| <a name="input_datasource_user_name"></a> [datasource_user_name](#input_datasource_user_name) | n/a                                               | `string`   | `"hitme_user"` |    no    |
+| <a name="input_lambda_resolver_arn"></a> [lambda_resolver_arn](#input_lambda_resolver_arn)    | n/a                                               | `string`   | n/a            |   yes    |
+| <a name="input_request_template"></a> [request_template](#input_request_template)             | n/a                                               | `string`   | n/a            |   yes    |
+| <a name="input_resolver_field"></a> [resolver_field](#input_resolver_field)                   | (optional) describe your variable                 | `string`   | n/a            |   yes    |
+| <a name="input_resolver_type"></a> [resolver_type](#input_resolver_type)                      | (optional) describe your variable                 | `string`   | n/a            |   yes    |
+| <a name="input_response_template"></a> [response_template](#input_response_template)          | n/a                                               | `string`   | n/a            |   yes    |
+| <a name="input_schema"></a> [schema](#input_schema)                                           | n/a                                               | `string`   | n/a            |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_api"></a> [api](#output\_api) | n/a |
-| <a name="output_datasource"></a> [datasource](#output\_datasource) | n/a |
-| <a name="output_resolver"></a> [resolver](#output\_resolver) | n/a |
+| Name                                                              | Description |
+| ----------------------------------------------------------------- | ----------- |
+| <a name="output_api"></a> [api](#output_api)                      | n/a         |
+| <a name="output_datasource"></a> [datasource](#output_datasource) | n/a         |
+| <a name="output_resolver"></a> [resolver](#output_resolver)       | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -98,7 +99,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright 2019-2021 James Woolfenden
+Copyright 2019-2022 James Woolfenden
 
 ## License
 
